@@ -46,5 +46,11 @@ nav.forEach(function(a, i){
   a.textContent = siteContent["nav"][`nav-item-${i + 1}`];
 });
 
+let cta = document.querySelector(".cta-text h1");
+cta.textContent = "DOM is awesome!";
+
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.textContent  = "Get Started";
+
 let codeCircle = document.querySelector('#cta-img');
 codeCircle.setAttribute('src', siteContent["cta"]["img-src"]);
