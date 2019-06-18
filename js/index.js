@@ -46,6 +46,16 @@ nav.forEach(function(a, i){
   a.textContent = siteContent["nav"][`nav-item-${i + 1}`];
 });
 
+nav.forEach(function(a){
+  a.style.color = 'green';
+});
+
+// Bookmark----------------------------------------------------
+let navParent = document.querySelector('nav');
+navParent.prepend(a);
+navParent.append(a);
+console.log(navParent);
+
 let cta = document.querySelector(".cta-text h1");
 cta.textContent = siteContent["cta"]["h1"];
 
