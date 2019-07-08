@@ -12,12 +12,10 @@ window.setInterval(function(){
     if (secondOnesValue === 9){
         secondOnesValue = 0;
         secondOnes.textContent = secondOnesValue;
-        console.log(secondOnes.textContent, 'loop');
     }
 
     else {
         secondOnesValue++;
         secondOnes.textContent = secondOnesValue;
-        console.log(secondOnes.textContent);
     }
 }, 1000);
