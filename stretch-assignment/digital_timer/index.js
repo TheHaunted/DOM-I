@@ -6,21 +6,18 @@ let colon = timerContainer.querySelector('#colon');
 let msHundreds = timerContainer.querySelector('#msHundreds');
 let msTens = timerContainer.querySelector('#msTens');
 
-secondOnesValue = timerContainer.querySelector('#secondOnes').textContent;
+secondOnesValue = 0;
 window.setInterval(function(){
     
-    if (secondOnes.textContent === '-'){
-        secondOnes.textContent = 1;
-        console.log(secondOnes.textContent);
-    }
-
-    else if (secondOnes.textContent === 9){
-        secondOnes.textContent = 0;
+    if (secondOnesValue === 9){
+        secondOnesValue = 0;
+        secondOnes.textContent = secondOnesValue;
         console.log(secondOnes.textContent, 'loop');
     }
 
     else {
-        secondOnes.textContent++;
+        secondOnesValue++;
+        secondOnes.textContent = secondOnesValue;
         console.log(secondOnes.textContent);
     }
 }, 1000);
