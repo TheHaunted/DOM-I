@@ -50,11 +50,20 @@ nav.forEach(function(a){
   a.style.color = 'green';
 });
 
-// Bookmark----------------------------------------------------
 let navParent = document.querySelector('nav');
-navParent.prepend(a);
-navParent.append(a);
-console.log(navParent);
+
+let navMemes = document.createElement("a");
+navMemes.href = "#";
+navMemes.textContent = "Memes";
+navMemes.style.color = 'green';
+
+let navFAQ = document.createElement('a');
+navFAQ.href = '#';
+navFAQ.textContent = 'FAQ';
+navFAQ.style.color = 'green';
+
+navParent.appendChild(navMemes);
+navParent.prepend(navFAQ);
 
 let cta = document.querySelector(".cta-text h1");
 cta.textContent = siteContent["cta"]["h1"];
